@@ -1,0 +1,128 @@
+/* CSS Document */
+
+	h1 {font-size: 3rem; text-transform: uppercase; font-family: $oswaldFont; font-weight: 400; }
+	h2 { font-family: $oswaldFont; font-size: 2rem; font-weight: 400;}
+	p { font-size: 1rem; line-height: 1.4rem; margin-top: 10px;}
+	
+
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+}
+
+h1,h1 small,h2 small,h3 small,h4 small,h5 small,h6 small {
+    font-family: $openSansFont;
+    line-height: 1.35
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small {
+    font-weight: 400;
+    opacity: .54;
+    font-size: .6em
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 48px
+}
+
+h3,h4 {
+    font-weight: 400
+}
+
+h3 {
+    font-size: 34px;
+    line-height: 40px
+}
+
+h4,h5 {
+    font-family: $openSansFont;
+}
+
+h4 {
+    -moz-osx-font-smoothing: grayscale;
+    margin: 24px 0 16px;
+    line-height: 32px
+}
+
+h5,h6 {
+    margin: 24px 0 16px
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+blockquote,h6 {
+    font-family: $openSansFont;
+}
+
+a {
+    font-weight: 500
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+/*below this is custom */
+.interior-container h2 {
+	font-family: $oswaldFont;
+	font-size: 2.1rem;
+	color: #444;
+}
+
+.interior-container h4 {
+    font-family: $oswaldFont;
+    font-size: 1.4rem;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 24px 0 16px;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+.interior-container h3 {
+    font-family: $oswaldFont;
+    text-transform: uppercase;
+    font-size: 1.4em;
+	line-height: 40px;
+	font-weight: 400;
+}
+
+.interior-container p,
+.interior-container ul,
+.interior-container ol {
+    font-size: 1rem;
+    line-height: 1.6em;
+}
+
+.interior-container ul,
+.interior-container ol {
+	color: rgb(102,102,102);
+	font-weight: 400;
+}
+
+.interior-container h6,
+.interior-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.interior-container h5 
+{
+font-weight: 700;
+margin-top: 0;
+color: $dkGray;
+text-transform: uppercase;
+font-size: 16px;
+line-height: 100%;
+}
+
+
+@media (min-width: 600px) { 
+	h1 {font-size: 4rem; }
+}

@@ -1,0 +1,57 @@
+/* CSS Document */
+
+
+.mainContainer { width: 100%; margin: 0 auto; }
+article { width: 100%; clear: both; margin-top: 0; display: block; }
+.innerContent { width: 100%; max-width: 1200px; margin: 10px auto;  }
+
+.middle-content {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 650px
+} 
+
+.middle-content.interior {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    min-height: 0;
+    margin-top: 0;
+    background-size: 300px 100px
+}
+
+.middle-content.interior.default {
+    background-color: $blue;
+}
+
+.interior-container {
+    width: 98%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    font-family: $openSansFont;
+    min-height: 400px;
+}
+
+.interior-container.landing {
+    padding-top: 1em
+}
+
+.interior-container img.landing {
+    width: 100%;
+    float: left
+}
+
+.interior-container .logocontainer {
+    float: left;
+    text-align: center;
+    padding: 40px;
+}
+
+.logoblock { 
+	max-width: 90%;
+	margin: 0 auto;
+	 }
+

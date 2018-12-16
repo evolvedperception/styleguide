@@ -1,0 +1,74 @@
+.heading-container {
+	max-width:1170px;
+	margin:0 auto
+}
+
+.heading-container .heading {
+	width:100%;	
+	float:right;
+	/*padding: 0 .5em;*/
+}
+
+.heading-container .heading.full-width {
+ 	max-width:1170px
+}
+.heading-container .heading .breadcrumbs {
+ 	float:left;
+ 	color: $white;
+ 	font-family: $oswaldFont;
+ 	margin-top:10px;
+	padding-left:6px;
+	text-transform:uppercase;
+}
+
+.heading-container .heading .breadcrumbs a {
+ 	font-family: $oswaldFont;
+ 	text-transform:uppercase;
+ 	color: $white;
+ 	text-decoration:none
+}
+
+.heading-container .heading .tools {
+	float:right;
+	padding-top:10px;
+	padding-right:6px;
+	height:20px
+}
+
+.heading-container .heading h1 {
+	font-family: $oswaldFont;
+	font-size:5vw;
+	margin:0;
+	padding:0;
+	clear:both;
+	text-transform:uppercase;
+	color:$white;
+	padding-left:6px
+}
+
+
+
+
+@media only screen and (min-width:1004px) {
+	.heading-container .heading .breadcrumbs {
+		padding-left:0
+	}
+ 	.heading-container .heading .tools {
+  		padding-right:0
+ 	}
+ 	.heading-container .heading h1 {
+ 		padding-left:0;
+ 		font-size:64px
+ 	}
+ 	.heading-container .heading {
+  		padding:0 .5em
+ 	}
+}
+
+@media only screen and (min-width:1170px) {
+ 	.heading-container .heading {
+  		width:100%;
+  		max-width:884px;
+  		float:right
+ 	}
+}

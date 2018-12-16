@@ -1,0 +1,132 @@
+@import "partials/variables";
+
+.openSansFont {font-family: $openSansFont; }
+.oswaldFont {font-family: $oswaldFont; }
+
+// .colorBlock { width: 20%; margin: 2.5%; float: left; min-height: 200px; }
+.swatch { height: 50px; width: 100%; }	
+.reset {margin: 0; padding: 0;}
+
+.borderGreen { border: 2px solid $green;}
+
+#main-nav ul li a:hover {
+	text-decoration: underline;
+	background-color: $ltGray;
+}
+
+.interior-container h3 { margin-bottom: 0; }
+.heading-container .heading .breadcrumbs a:hover {text-decoration: underline;}
+
+.whiteLinkExample { padding: 10px;
+	a {font-weight: 400; }
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > a,
+.flex-container > div {
+ 	width: 100%;
+	margin: 10px;
+
+}
+
+.nav-grid a {	
+	border: 2px solid $ltGray;
+	margin: 5px;
+	padding: 10px 0;
+	float: left;
+	text-align: center;}
+
+.nav-grid a:link {background-color: $ltGray; }
+.nav-grid a:visited { background-color: $ltGray; }
+.nav-grid a:hover { background-color: $white; }
+.nav-grid a:active { background-color: $white; }
+
+/*
+.navGrid  { margin: 0 auto; }
+.navGrid ul { padding: 0; margin: 0;}*/
+/*.navGrid li a {
+	border: 2px solid $ltGray;
+	color: $dkGray;
+	margin: 5px;
+	padding: 10px 0;
+	float: left;
+	text-align: center;
+}*/
+/*
+.navGrid ul li { list-style: none;}
+.navGrid li a:link {background-color: $ltGray; }
+.navGrid li a:visited { background-color: $ltGray; }
+.navGrid li a:hover { background-color: $white; }
+.navGrid li a:active { background-color: $white; }
+*/
+.guideContainer section { margin-bottom: 40px;}
+.guideContainer .mainSection { background-color: $ltGray; padding: 10px; margin: 0 auto 20px auto; text-align: center;}
+.guideContainer .mainSection h2 {line-height: 0; }
+.guideContainer .mainSection h4 { margin: 0;} 
+.interior-container h5 { margin-top: 20px;} 
+
+.guideContainer .subSection { margin: 10px auto; }
+
+.guideContainer .tipBlock { border: 1px solid $ltGray; margin: 10px auto 40px auto; }
+.guideContainer .tipBlock h5 { background-color: $dkGray; padding: 10px; margin-top: 0; text-align: center; color: $mdGray;}
+.guideContainer .tipBlock p { margin: 10px; }
+
+.guideContainer table { width: 50%; margin: 20px auto; border: 1px solid $ltGray; }
+.guideContainer caption { background-color: $ltGray; padding: 10px; }
+.guideContainer tbody tr:nth-child(odd){ background-color: $ltGray; }
+.guideContainer ul { margin-top: 0; }
+
+.logocontainer .logoTall img { max-height: 300px; min-height:300px; width: 100%;}
+.logocontainer .logoShort { min-height: 130px;}
+
+table.typeTable { 
+	overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+	table-layout: auto;
+    word-break: normal;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    width: 100%;
+	}
+
+	.typeTable th, .typeTable td {
+    vertical-align: top;
+    padding: 12px 15px;
+}
+
+tbody tr:nth-child(2n+1) { background-color: transparent;}
+
+.typeTable td {
+    border-bottom: 1px dotted #dedddc;
+    cursor: default;
+	    line-height: 24px;
+}
+
+.fontExampleBlock {font-size: 2rem; line-height: 3rem; margin: 30px ; word-wrap: break-word; }
+.mdcExample { background-color: $ltGray; width: 100%; margin: 20px auto; padding: 20px 0; text-align: center;
+	a  { clear:both; display: block; margin-top: 20px;}
+}
+
+@media screen and (min-width: 600px) {
+.flex-container > a,
+.flex-container > div {
+	width: 20%;
+	}
+	.guideContainer {		
+		.tipBlock { width: 80%; 
+			p { font-size: .875rem; line-height: 1.25rem;}
+		}
+		ul,
+		ol { font-size: .875rem; line-height: 1.25rem; }
+	}	
+    
+
+
+}

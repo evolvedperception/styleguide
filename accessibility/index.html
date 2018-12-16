@@ -1,0 +1,1428 @@
+<!doctype html>
+
+<html class=" js no-touch cssanimations csstransitions" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta id="title" name="title" content="Home">
+		<meta name="description" content="Moraine Park Technical College Style Guide">
+		<title>Moraine Park Style Guide - Accessibility</title>
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+		<link rel="stylesheet" href="../scss/normalize.css">
+		<link rel="stylesheet" href="../scss/core.css">
+		<link rel="stylesheet" href="../scss/styleguide.css">
+	</head>
+<body>
+<div class="the-works">
+	<a class="skip-to-content" href="#mainContent">Skip to Content</a>
+
+	<header class="cd-main-header">
+	<div class="header-container">
+		<a class="cd-logo" href="../index.html">
+			<img id="standard-logo" src="../images/mptc-horiz-rgb.svg" alt="MPTC's official logo with text"> 
+			<img id="mini-logo" src="../images/mptc-mark-rgb.svg" alt="MPTC's official logo">
+		</a>
+		
+		<ul class="cd-header-buttons">
+        	<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+		</ul>
+		<nav id="main-nav">
+        	<ul class="main-nav">
+				<li id="accessibilityMenu" rel="0"><a title="Accessibility Components" href="index.html">Accessibility</a></li>
+				<li id="coreMenu" class="has-children" rel="0"><a title="Core Elements" href="#">Core Elements</a>
+					<ul class="is-hidden">
+						<li id="allCoreMenu" class="is-hidden" rel="coreMenu"><a title="All Core Elements" href="../core/index.html">All Core Elements</a></li>
+						<li id="linkMenu" rel="coreMenu"><a title="Buttons and Links" href="../core/links.html">Buttons &amp; Links</a></li>
+						<li id="colorMenu" rel="coreMenu"><a title="Color Palette" href="../core/color-palette.html">Color Palette</a></li>
+						<li id="logoMenu" rel="coreMenu"><a title="Logos" href="../core/logos.html">Logos</a></li>
+						<li id="notificationsMenu" rel="coreMenu"><a title="Notifications" href="../core/notifications.html">Notifications</a></li>
+						<li id="typographyMenu" rel="coreMenu"><a title="Typography" href="../core/typography.html">Typography</a></li>
+					</ul>
+				</li>
+				<li id="voiceMenu" rel="0"><a title="Voice Components" href="../voice/index.html">Voice</a></li>
+				<li id="materialMenu" rel="0"><a title="Material Design Components" href="#">Material Design Components</a>
+					<ul class="is-hidden">
+              			<li id="allMaterialMenu" class="is-hidden" rel="materialMenu"><a href="../material-design/index.html">All Material Design Components</a></li>
+						<li id="buttonMenu" rel="materialMenu"><a title="Button Components" href="../material-design/button-components/index.html">Button Components</a></li>
+						<li id="inputMenu" rel="materialMenu"><a title="Input Components" href="../material-design/input-components/index.html">Input Components</a></li>
+						<li id="layoutMenu" rel="materialMenu"><a title="Layout Components" href="../material-design/layout-components/index.html">Layout Components</a></li>
+						<li id="otherMenu" rel="materialMenu"><a title="Other Components" href="../material-design/other-components/index.html">Other Components</a></li>
+						<li id="styleMenu" rel="materialMenu"><a title="Style Components" href="../material-design/style-components/index.html">Style Components</a> </li>
+					</ul>	
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+		
+<main class="mainContainer" id="mainContent">
+	<div id="coreHeading" class="clear floatLeft">
+		<div class="middle-content interior cf default">
+			<div class="heading-container cf">
+				<div class="heading full-width">
+					<div class="breadcrumbs">
+						<div class="breadcrumb">
+							<a href="../index.html">HOME</a> &gt;
+						</div>
+					</div>
+					<h1>Accessibility</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="interior-container cf landing guideContainer" id="accessibility"><!-- start accessibility-->	
+		
+		<div class="flex-container nav-grid">
+			<a href="#documentation">Documentation</a>
+			<a href="#testing-tools">Testing Tools</a>
+			<a href="#screen-readers">Screen Readers</a>
+			<a href="#text-alternatives">Text Alternatives 1.1</a>
+			<a href="#time-based-media">Time Based Media 1.2</a>
+			<a href="#adaptable">Adaptable 1.3</a>
+			<a href="#distinguishable">Distinguishable 1.4</a>
+			<a href="#keyboard-accessible">Keyboard Accessible 2.1</a>
+			<a href="#enough-time">Enough Time 2.2</a>
+			<a href="#seizures">Seizures 2.3</a>
+			<a href="#navigable">Navigable 2.4</a>
+			<a href="#input-modalities">Input Modalities 2.5</a>
+			<a href="#readable">Readable 3.1</a>
+			<a href="#predictable">Predictable 3.2</a>
+			<a href="#input-assistance">Input Assistance 3.3</a>
+			<a href="#compatible">Compatible 4.1</a>
+		</div>
+		
+	<section id="documentation" aria-labelledby="accessDocumentation">
+		<h2 id="accessDocumentation">WCAG Documentation</h2>
+		<ul>
+			<li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener">WCAG 2.1 Quick Reference</a></li>
+			<li><a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener">WCAG 2.1 Full Site</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener">About ARIA</a></li>
+			<li><a href="http://webaim.org/techniques/forms/advanced" target="_blank" rel="noopener">Using ARIA within Forms</a></li>
+		</ul>
+	</section>
+		
+	<section id="screen-readers" aria-labelledby="screenReaders">
+		<h2 id="screenReaders">Screen Readers</h2>
+		<ul>
+			<li><a href="http://www.nvaccess.org/" target="_blank" rel="noopener">NVDA</a></li>
+			<li><a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="noopener">ChromeVox</a></li>
+			<li><a href="https://www.freedomscientific.com/Downloads/JAWS" target="_blank" rel="noopener">JAWS</a></li>
+			<li><a href="https://www.apple.com/accessibility/mac/vision/" target="_blank" rel="noopener">VoiceOver</a></li>
+		</ul>
+	</section>	
+		
+	<section id="testing-tools" aria-labelledby="accessTesting">
+		<h2 id="accessTesting">Accessibility Testing Tools</h2>
+		<ul>
+			<li><a href="http://khan.github.io/tota11y/" target="_blank" rel="noopener">tota11y</a></li>
+			<li><a href="http://www.deque.com/products/axe/" target="_blank" rel="noopener">aXe</a></li>
+			<li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en" target="_blank" rel="noopener">Chrome Accessibility Dev Tools</a></li>
+			<li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en" target="_blank" rel="noopener">Firefox Add-On aXe Dev Tools</a></li>
+			<li><a href="https://addons.mozilla.org/en-us/firefox/addon/axe-devtools/" target="_blank" rel="noopener">WAVE Chrome Extention</a>
+				<ul>
+					<li>WAVE testing checklist:
+						<ul>
+							<li>Check that the page language is specified (&lt;html lang="en"&gt;)</li>
+							<li>Image alt attribute value is next to the image.</li>
+							<li>Alt text conveys the content and function of the image.</li>
+							<li>View headings using the outline tab in the sidebar.</li>
+							<li>All visual headings are be marked up as true headings (h1, h2, h3, etc).</li>
+							<li>Main heading should most always be an &lt;h1&gt; - one per page.</li>
+							<li>Check for skipped headings (going from &lt;h2&gt; to &lt;h4&gt;).</li>
+							<li>Select contrast view, WAVE flags WCAG AA contrast issues.</li>
+							<li>If links are not underlined, there must be 3:1 contrast between the link text and the body text PLUS an additional change on mouse hover and keyboard focus (such as an underline).</li>
+							<li>Check to ensure HTML5 regions or ARIA landmarks are correct.</li>
+							<li>Check that ARIA labels and descriptions are correct.</li>
+							<li>Form controls must have descriptive labels.</li>
+							<li>Use the Code panel to check that the label for and input id values match.</li>
+							<li>If label is not visible, be sure there is a hidden label, aria-label, or title attribute.</li>
+							<li>Check keyboard accessibility, navigate the page using only the keyboard.
+								<ul>
+									<li>Tab: Navigate to links and form controls.</li>
+									<li>Shift + Tab: Navigate backwards.</li>
+									<li>Enter: Activate links and buttons.</li>
+									<li>Spacebar: Activate checkboxes and buttons.</li>
+									<li>Arrow keys: Radio buttons, select/dropdown menus, sliders, tab panels, autocomplete, etc.</li>
+									<li>Esc: Close all dialogs.</li>
+									<li>Fix anything that is mouse-only (ex: rollover menus).</li>
+									<li>Ensure there is a 'skip navigation' link available.</li>
+									<li>Be sure navigation is in a logical and intuitive order.</li>
+									<li>Each element that receives focus must have a focus indicator/outline present.</li>
+									<li>Test 'pop-up' dialogs to be sure a user can navigate and close the dialog.</li>
+									<li>After closing a dialog, focus should return to a logical place on the page.</li>
+								</ul>
+							</li>
+							<li>Test content scaling:
+								<ul>
+									<li>Enlarge font using web browser to 150%, it must be usable and readable.</li>
+									<li>Zoom the web page in browser to at least 200%, text and images must be readable.</li>
+								</ul>
+							</li>
+							<li>Test using a screen reader such as <a href="https://www.nvaccess.org/" target="_blank" rel="noopener">NVDA</a>, <a href="https://www.freedomscientific.com/Downloads/JAWS" target="_blank" rel="noopener">JAWS</a>, <a href="https://www.apple.com/accessibility/mac/vision/" target="_blank" rel="noopener">VoiceOver</a>, or <a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en" target="_blank" rel="noopener">ChromeVox</a>.
+								<ul>
+									<li>Make sure navigation, forms and dynamic content read properly.</li>
+									<li>ARIA roles/states/properties are set up as needed and convey the correct information.</li>
+									<li>Test empty forms to be sure validation/error feedback works properly.</li>
+									<li>All dynamic changes and updates must be accessible.</li>
+								</ul>
+							</li>
+                            <li>Other issues to check for:
+								<ul>
+									<li>Media must have captions and transcripts.</li>
+									<li>Each page &lt;title&gt; must be unique and descriptive.</li>
+									<li>Links with ambiguous text such as 'Click Here' should be avoided.</li>
+									<li>Information should not depend on color, audio, shape, size or location.</li>
+									<li>Any animating or updating content and media should be able to be paused and stopped.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	
+    <article aria-labelledby="perceivable">
+		<div class="mainSection">
+			<h2 id="perceivable">1. Perceivable</h2>
+			<p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+		</div>
+	<section id="text-alternatives" aria-labelledby="textAlt">
+			<h3 id="textAlt">Text Alternatives 1.1</h3>
+			<p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/text-alternatives" target="_blank" rel="noopener">Understanding Guideline 1.1</a>
+
+		<section class="subSection" aria-labelledby="nonTextContent">
+				<h4 id="nonTextContent">Non-text Content 1.1.1</h4>
+				<p>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content" target="_blank" rel="noopener">Understanding Success Criterion 1.1.1</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.1.1 Criteria</h5>
+				<ul>
+					<li>Use alt attribute on all img elements.</li>
+					<li>Provide link text that describes the purpose of a link for anchor elements.</li>
+					<li>All linked images have descriptive alternative text.</li>
+					<li>Frames and iframes have appropriate titles.</li>
+					<li>Form buttons have a descriptive value.</li>
+					<li>Use label elements to associate text labels with form controls.</li>
+					<li>Use title attribute to identify form controls when the label element cannot be used.</li>
+					<li>Use null alt text (alt="") and no title attribute on images that do not convey content, are decorative, or contain content that is already conveyed in text.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+	<section id="time-based-media" aria-labelledby="timeBasedMedia">
+			<h3 id="timeBasedMedia">Time-Based Media 1.2</h3>
+			<p>Provide alternatives for time-based media.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/time-based-media" target="_blank" rel="noopener">Understanding Guideline 1.2</a>
+
+		<section class="subSection" aria-labelledby="audioVideoOnly">
+				<h4 id="audioVideoOnly">Audio-only and Video-only 1.2.1</h4>
+				<p>For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded" target="_blank" rel="noopener">Understanding Success Criterion 1.2.1</a>
+
+			<h5>Prerecorded Audio-only</h5>
+			<p>An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.</p>
+
+			<h5>Prerecorded Video-only</h5>
+			<p>Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.</p>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.2.1 Criteria</h5>
+				<ul>
+					<li>View the video-only content while referring to the alternative for time-based media.</li>
+					<li>Check that the information in the transcript includes the same information that is in the video-only presentation.</li>
+					<li>If the video includes multiple people or characters, check that the transcript identifies which person or character is associated with each action described.</li>
+					<li>Check that at least one of the following is true:
+						<ul>
+							<li>The transcript itself can be programmatically determined from the text alternative for the video-only content;</li>
+							<li>The transcript is referred to from the programmatically determined text alternative for the video-only content;</li>
+							<li>If the alternate version(s) are on a separate page, check for the availability of link(s) to allow the user to get to the other versions.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="captions">
+				<h4 id="captions">Captions (Prerecorded) 1.2.2</h4>
+				<p>Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded" target="_blank" rel="noopener">Understanding Success Criterion 1.2.2</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.2.2 Criteria</h5>
+				<ul>
+					<li>Synchronized captions are provided for non-live video (YouTube videos, etc).</li>
+					<li>Captions not only include dialogue, but identify who is speaking and include non-speech information conveyed through sound, including meaningful sound effects.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="audioPreRecorded">
+				<h4 id="audioPreRecorded">Audio Description or Media Alternative (Prerecorded) 1.2.3</h4>
+				<p>An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded" target="_blank" rel="noopener">Understanding Success Criterion 1.2.3</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.2.3 Criteria</h5>
+				<ul>
+					<li>A descriptive text transcript or audio description track is provided for non-live video.</li>
+					<li>This is only required if the video conveys content visually that is not presented via the audio track.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="captionsLive">
+				<h4 id="captionsLive">Captions (Live) 1.2.4</h4>
+				<p>Captions are provided for all live audio content in synchronized media.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-live" target="_blank" rel="noopener">Understanding Success Criterion 1.2.4</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.2.4 Criteria</h5>
+				<ul>
+					<li>Synchronized captions are provided for all live multimedia that contains audio (audio-only, broadcasts, webcasts, video conferences, etc.).</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="subSection" aria-labelledby="audioDescPrerecorded">
+				<h4 id="audioDescPrerecorded">Audio Description (Prerecorded) 1.2.5</h4>
+				<p>Audio description is provided for all prerecorded video content in synchronized media.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded" target="_blank" rel="noopener">Understanding Success Criterion 1.2.5</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.2.5 Criteria</h5>
+				<ul>
+					<li>Audio descriptions are provided for all video content.</li>
+					<li>Only required if the video conveys content visually that is not presented via the audio track.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+	<section id="adaptable" aria-labelledby="adaptable13">
+			<h3 id="adaptable13">Adaptable 1.3</h3>
+			<p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/adaptable" target="_blank" rel="noopener">Understanding Guideline 1.3</a>
+
+		<section class="subSection" aria-labelledby="infoRelationship">
+				<h4 id="infoRelationship">Info and Relationships 1.3.1</h4>
+				<p>Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships" target="_blank" rel="noopener">Understanding Success Criterion 1.3.1</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.3.1 Criteria</h5>
+				<ul>
+					<li>Use semantic elements &amp; aria landmarks to markup structure (nav, section, article, etc. instead of div).</li>
+					<li>DO NOT use inline styles.</li>
+					<li>Use standard text formatting conventions for paragraphs. (p)</li>
+					<li>Use standard text formatting conventions for lists. (ul, ol, li)</li>
+					<li>Use standard text formatting conventions for headings. (h1, h2, h3, etc.)</li>
+					<li>Organize a page using headings.</li>
+					<li>Use CSS to control visual presentation of text.</li>
+					<li>Use the aria-describedby property to provide a descriptive label for user interface controls.</li>
+				</ul>
+
+				<h5>Tips for Meeting 1.3.1 Criteria - FORMS</h5>
+				<ul>
+					<li>Identify a required field with the aria-required property.</li>
+					<li>Use OPTGROUP to group OPTION elements inside a SELECT.</li>
+					<li>Use label elements to associate text labels with form controls.</li>
+					<li>Use the title attribute to identify form controls when the label element cannot be used.</li>
+					<li>Provide a description for groups of form controls using fieldset and legend elements.</li>
+					<li>Required fields must be identified.</li>
+				</ul>
+
+				<h5>Tips for Meeting 1.3.1 Criteria - TABLES</h5>
+				<ul>
+					<li>Use table markup to present tabular information. <span class="bold">Tables should ONLY be used to markup tabular information.</span></li>
+					<li>Table markup needs to consist of at least the elements table, tr, th, and td.</li>
+					<li>Use the summary attribute to associate header cells and data cells in data tables.</li>
+					<li>Use the scope attribute to associate data cells with header cells in data tables.</li>
+                    <li>Use id and header attributes to associate data cells with header cells in data tables.</li>
+				</ul>
+			</div>
+
+            <h5>ARIA Landmarks and Regions</h5>
+			<p>Landmarks are inserted into the page using the role attribute on an element that marks the section. The value of the attribute is the name of the landmark.</p>
+
+			<h5>Comparing HTML 5 to ARIA</h5>
+			<p>The alignment of ARIA roles and HTML 5 elements is not exact. The intentions and purposes are somewhat different between the two specifications, but the following table presents a reasonable interpretation of some of the ways HTML 5 and ARIA can overlap.</p>
+
+			<p>* The region and article roles are not ARIA landmarks.<br />
+			The most useful of these for most websites are header/banner, nav/navigation, main, and footer/contentinfo.</p>
+
+			<table class="tableLayout">
+				<caption>HTML5 elements and corresponding ARIA roles</caption>
+				<tbody>
+					<tr>
+						<th scope="col">HTML 5</th>
+						<th scope="col">ARIA Role</th>
+					</tr>
+					<tr>
+						<td><code>&lt;header&gt;</code></td>
+						<td><code>role="banner"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;nav&gt;</code></td>
+						<td><code>role="navigation"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;main&gt;</code></td>
+						<td><code>role="main"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;footer&gt;</code></td>
+						<td><code>role="contentinfo"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;aside&gt;</code></td>
+						<td><code>role="complementary"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;section&gt;</code></td>
+						<td><code>role="region"</code> *</td>
+					</tr>
+					<tr>
+						<td><code>&lt;article&gt;</code></td>
+						<td><code>role="article"</code> *</td>
+					</tr>
+					<tr>
+						<td><code>none</code></td>
+						<td><code>role="search"</code></td>
+					</tr>
+					<tr>
+						<td><code>&lt;form&gt;</code></td>
+						<td><code>role="form"</code></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="subSection" aria-labelledby="meaningfulSeq">		
+				<h4 id="meaningfulSeq">Meaningful Sequence 1.3.2</h4>
+				<p>When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence" target="_blank" rel="noopener">Understanding Success Criterion 1.3.2</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.3.2 Criteria</h5>
+					<ul>
+						<li>The DOM order must match the visual order.</li>
+						<li>Use left justified text for languages that are written left to right.</li>
+					</ul>
+			</div>		
+		</section>
+
+		<section class="subSection" aria-labelledby="sensoryChar">
+				<h4 id="sensoryChar">Sensory Characteristics 1.3.3</h4>
+				<p>Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics" target="_blank" rel="noopener">Understanding Success Criterion 1.3.3</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.3.3 Criteria</h5>
+					<ul>
+						<li>Do not use a graphical symbol alone to convey information.</li>
+                        <li>Use an image with alt text for graphical symbols.</li>
+					</ul>
+
+				<h5>Tips for Using Icons</h5>
+					<ol>
+						<li>Standalone Icon, Meaningful</li>
+						<li>Standalone Icon, Decorative</li>
+						<li>Linked Icon, No Text</li>
+						<li>Linked Icon, with Static Text</li>
+					</ol>
+
+				<h5>Example 1: Standalone Icon, Meaningful</h5>
+				<p>Meaningful svg icons need a title, images need to have alt text.</p>			
+				
+				<div style="width:200px; text-align:center; margin:0 auto;" class="clearfix">
+						<img src="https://www.morainepark.edu/wp-content/themes/morainepark-2018/img/event.png" height="24" width="24" alt="Full Events Calendar">
+				</div>
+						
+				<h5>Example 2: Standalone Icon, Decorative</h5>
+				<p>Decorative icons (icons that repeat the information conveyed by text or do not add significant value) do not need alternative text and they should be hidden from the screen reader.</p>
+				
+				<div style="width:200px; text-align:center; margin:0 auto;" class="clearfix">
+						<img aria-hidden="true" src="https://www.morainepark.edu/wp-content/themes/morainepark-2018/img/event.png" height="24" width="24" alt="Full Events Calendar">
+				</div>				
+
+				<h5>Example 3: Linked Icon, No Text</h5>
+				<p>For linked icons that are not paired with text, use aria-label on the &lt;a&gt; element to provide descriptive, alternative text.</p>
+				
+				<div style="width:200px; text-align:center; margin:0 auto;" class="clearfix">
+					<a href="#" style="float:left; display:block; padding: 20px;" aria-label="View Full Events Calendar">
+						<img src="https://www.morainepark.edu/wp-content/themes/morainepark-2018/img/event.png" height="24" width="24" alt="Full Events Calendar">
+					</a>
+				</div>
+
+				<h5>Example 4: Linked Icon, with Static Text</h5>
+				<p>For linked icons that are paired with text, use aria-label on the &lt;a&gt; element to provide descriptive, alternative text.<br />
+				With aria-label on the anchor tag, the screen reader does not announce the text inside of the link.</p>
+				<div style="width:200px; text-align:center; margin:0 auto;" class="clearfix">
+					<a href="#" style="float:left; width:60px; display:block; margin-top:32px; margin-left:30px;" aria-label="View Full Events Calendar">
+						<img src="https://www.morainepark.edu/wp-content/themes/morainepark-2018/img/event.png" height="24" width="24" alt="Full Events Calendar">
+					</a>
+					<h3 style="float:left; padding-left:7px; font-size: 1.3em; text-align: center;">Events</h3>
+				</div>
+					
+			</div>
+		</section>
+		
+		<section class="subSection" aria-labelledby="orientation">
+				<h4 id="orientation">Orientation 1.3.4</h4>
+				<p>Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/orientation" target="_blank" rel="noopener">Understanding Success Criterion 1.3.4</a>
+		</section>
+
+		<section class="subSection" aria-labelledby="idInputPurpose">
+				<h4 id="idInputPurpose">Identify Input Purpose 1.3.5</h4>
+				<p>The purpose of each input field collecting information about the user can be programmatically determined when:
+					<ul>
+						<li>The input field serves a purpose identified in the <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html#input-purposes" target="_blank" rel="noopener">Input Purposes for User Interface Components section</a>;</li>
+						<li>The content is implemented using technologies with support for identifying the expected meaning for form input data.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose" target="_blank" rel="noopener">Understanding Success Criterion 1.3.5</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.3.5 Criteria</h5>
+				<ul>
+					<li>Provide the autocomplete attribute on inputs.</li>
+					<li>Use <a href="https://www.w3.org/TR/html5/sec-forms.html#sec-autofill" target="_blank" rel="noopener">autocomplete values from HTML5.2</a>.</li>
+				</ul>	
+			</div>
+		</section>
+	</section>
+
+	<section id="distinguishable" aria-label="distinguish14">
+			<h3 id="distinguish14">Distinguishable 1.4</h3>
+			<p>Make it easier for users to see and hear content including separating foreground from background.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/distinguishable" target="_blank" rel="noopener">Understanding Guideline 1.4</a>
+
+		<section class="subSection" aria-labelledby="useofColor">
+				<h4 id="useofColor">Use of Color 1.4.1</h4>
+				<p>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color" target="_blank" rel="noopener">Understanding Success Criterion 1.4.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.1 Criteria</h5>
+				<ul>
+					<li>Information that is conveyed by color differences needs to also be available in text.</li>
+					<li>Do not identify required or error fields using color differences only.</li>
+					<li>Using a mouse, hover over the element - check that the background, border, or text color changes.</li>
+					<li>Keyboard focus is applied.</li>
+					<li>Disabled form elements are grayed out and should not receive focus - be sure to apply the disabled state to the element.</li>
+				</ul>	
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="audioControl">
+				<h4 id="audioControl">Audio Control 1.4.2</h4>
+                <p>If any audio on a web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control" target="_blank" rel="noopener">Understanding Success Criterion 1.4.2</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.2 Criteria</h5>
+				<ul>
+					<li>Any sound that plays must turn off automatically within three seconds.</li>
+					<li>Provide a control near the beginning of the web page that turns off sounds that play automatically.</li>
+					<li>Play sounds only on user request.</li>
+				</ul>	
+			</div>
+		</section>
+
+		<section class="subSection" aria-describedby="contrastMin"> 
+				<h4 id="contrastMin">Contrast (Minimum) 1.4.3</h4>
+				<p>The visual presentation of text and images of text has a contrast ratio based on the below information.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum" target="_blank" rel="noopener">Understanding Success Criterion 1.4.3</a>
+				<a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener">WebAIM Contrast Checker Tool</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.3 Criteria</h5>
+				<ul>
+					<li>4.5:1 ratio if:
+						<ul>
+							<li>Normal weight text size is UNDER 1.5rem / 18pt / 150% / 24px</li>
+							<li>Bold weight text size is UNDER 1.17rem / 14pt / 116.67% / 18.67px</li>
+						</ul>
+					</li>
+					<li>3:1 ratio if:
+						<ul>
+							<li>Normal weight text size is OVER 1.5rem / 18pt / 150% / 24px</li>
+							<li>Bold weight text size is OVER 1.17rem / 14pt / 116.67% / 18.67px</li>
+						</ul>
+					</li>
+				</ul>	
+
+				<h5>Text DOES NOT have to meet contrast minimum ONLY if:</h5>
+				<ul>
+                    <li>Text is part of an inactive user interface component that is purely decoration, not visible to anyone;</li>
+					<li>Text is part of a logo or brand name.</li>
+				</ul>	
+			</div>	
+		</section>
+
+		<section class="subSection" aria-labelledby="resizeText">
+				<h4 id="resizeText">Resize Text 1.4.4</h4>
+				<p>Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text" target="_blank" rel="noopener">Understanding Success Criterion 1.4.4</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.4 Criteria</h5>
+				<ul>
+					<li>Ensure that text containers resize when the text resizes.</li>
+					<li>Use measurements that are relative to other measurements in the content.
+                       <ul>
+                            <li>Use rem units or percent for font sizes.</li>
+                            <li>Calculate size and position in a way that it scales with the text.</li>
+                            <li>Use a predefined grid system for layout to ensure liquid layout. DO NOT specify layout widths in px.</li>
+                            <li>User must be able to change size of all text on page up to 200 percent.</li>
+                            <li>Ensure there is no loss of content or functionality when the text resizes.</li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="imagesText">	
+				<h4 id="imagesText">Images of Text 1.4.5</h4>
+				<p>If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
+					<ul>
+                        <li>Customizable: The image of text can be visually customized to the user's requirements;</li>
+						<li>Essential: A particular presentation of text is essential to the information being conveyed. (Text that is part of a logo or brand name are considered essential.)</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text" target="_blank" rel="noopener">Understanding Success Criterion 1.4.5</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.5 Criteria</h5>
+				<ul>
+					<li>No text should be embedded in an image.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="reflow">
+				<h4 id="reflow">Reflow 1.4.10</h4>
+				<p>Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:
+					<ul>
+						<li>Vertical scrolling content at a width equivalent to 320px.</li>
+						<li>Horizontal scrolling content at a height equivalent to 256px.</li>
+                        <li>Not applicable for content which require two-dimensional layout for usage or meaning, i.e., images, maps, data tables.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow" target="_blank" rel="noopener">Understanding Success Criterion 1.4.10</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.10 Criteria</h5>
+				<ul>
+					<li>ALL pages need to be responsive and utilize media queries to reflow.</li>
+					<li>Breakpoints are not only triggered by narrower viewpoints, but also when browser zoom function is used.</li>
+					<li>All pages must fit a minimum of 320px, which is equivalent to a desktop browser window at 1280px wide and zoomed in to 400%.</li>
+					<li>When the browser zoom is used to scale content to 400%, it reflows - i.e., it is presented in one column so that scrolling in more than one direction is not necessary.</li>
+					<li>It is also important that content is not hidden off-screen. i.e., zooming into a vertically scrolling page should not cause content to be hidden to one side.</li>
+					<li>All content and funtionality must still be available, either directly, or via accessible controls.</li>
+					<li>Do not use fixed sized containers or fixed position content using CSS.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="nonTextContrast">
+				<h4 id="nonTextContrast">Non-text Contrast 1.4.11</h4>
+				<p>The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+					<ul>
+						<li>User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;</li>
+						<li>Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed;</li>
+						<li>Except for parts of the content which require two-dimensional layout for usage or meaning, i.e., images, maps, data tables.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast" target="_blank" rel="noopener">Understanding Success Criterion 1.4.11</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.11 Criteria</h5>
+				<ul>
+					<li>All button states must meet contrast ration requirements of at least 3:1.</li>
+					<li>Focus indicator must have sufficient contrast when the component is focused.</li>
+					<li>Disabled or inactive UI components do not have to meet the contrast requirements. i.e., A submit button that is visible but not active until all required fields are completed.</li>
+					<li>Graphical elements that must convey meaning, or are necessary for the user to understand the graphic, must meet contrast requirements.</li>
+				</ul>
+
+				<h5>Ways to Test</h5>
+				<ul>
+					<li>Identify each user-interface component (link, button, form control) on the page and:
+						<ul>
+							<li>Identify the visible boundaries of the component that indicate it is a component and test the contrast ratio against the adjacent colors;</li>
+							<li>Identify the state indicators and test the contrast ratio against the adjacent colors.</li>
+						</ul>
+					</li>
+					<li>Identify each graphic on the page that includes information required for understanding the content (ex: excluding graphics which have visible text for the same information, or are decorative) and:
+						<ul>
+							<li>Check the contrast of the graphical object against its adjacent colours.</li>
+							<li>If there are multiple colours and/or a gradient, chose the least contrasting area to test.</li>
+							<li>If it passes, move to the next graphical object.</li>
+							<li>If the least-contrasting area is less than 3:1, assume that area is invisible, is the graphical object still understandable?</li>
+							<li>If there is enough of the graphical object to understand, if so, its okay.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="textSpacing">
+				<h4 id="textSpacing">Text Spacing 1.4.12</h4>
+				<p> In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:
+					<ul>
+						<li>Line height (line spacing) to at least 1.5 times the font size;</li>
+						<li>Spacing following paragraphs to at least 2 times the font size;</li>
+						<li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
+						<li>Word spacing to at least 0.16 times the font size.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing" target="_blank" rel="noopener">Understanding Success Criterion 1.4.12</a>
+	
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.12 Criteria</h5>
+				<ul>
+					<li><a href="http://www.html5accessibility.com/tests/tsbookmarklet.html" target="_blank" rel="noopener">Bookmarklet to use for testing.</a></li>
+					<li>A user must be able to set text style properties as listed above without losing content or functionality. (This doesnt mean all text needs to be set like this for ALL users.)</li>
+					<li>Once new styles are set, text must fit within the bounds of its containing box without being cut off or overlapping other boxes.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="contentHover">
+				<h4 id="contentHover">Content on Hover or Focus 1.4.13</h4>
+				<p>Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:
+					<ul>
+						<li>Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;</li>
+						<li>Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;</li>
+						<li>Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</li>
+						<li>Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.
+							<ul>
+								<li>Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute.</li>
+								<li>Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.</li>
+							</ul>
+						</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus" target="_blank" rel="noopener">Understanding Success Criterion 1.4.13</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 1.4.13 Criteria</h5>
+					<ul>
+						<li>Position the additional content so that it does not obscure any other content including the trigger, with the exception of white space and purely decorative content, such as a background graphic which provides no information.</li>
+						<li>Provide a mechanism to easily dismiss the additional content, such as by pressing escape or selecting a close button.</li>
+						<li>Once new styles are set, text must fit within the bounds of its containing box without being cut off or overlapping other boxes.</li>
+						<li>Once content appears, it should remain visible until:
+							<ul>
+								<li>The user removes hover or focus from the trigger and the additional content, consistent with the typical user experience;</li>
+								<li>The user dismisses the additional content via the mechanism provided to satisfy the dismissable condition; or</li>
+								<li>The information conveyed by the additional content becomes invalid, such as a 'busy' message that is no longer valid.</li>
+								<li>This criterion does not affect the use and display of the title attribute in HTML when it displays as a small tooltip.</li>
+								<li>Modal dialogs are out of scope for this criterion because they must take keyboard focus and thus should not appear on hover or focus.</li>
+								<li>Content which can be triggered via pointer hover should also be able to be triggered by keyboard focus.</li>
+								<li>ARIA: Use role="tooltip"</li>
+								<li>CSS: Use hover and focus pseudo classes</li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+		</section>
+	</section>
+</article>
+	
+<article aria-labelledby="operable">
+	<div class="mainSection">
+		<h2 id="operable">2. Operable</h2>
+		<p>User interface components and navigation must be operable.</p>
+	</div>
+
+	<section id="keyboard-accessible" aria-label="keyboardAccess">
+			<h3 id="keyboardAccess">Keyboard Accessible 2.1</h3>
+			<p> Make all functionality available from a keyboard.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible" target="_blank" rel="noopener">Understanding Guideline 2.1</a>
+
+		<section class="subSection" aria-labelledby="keyboard">
+				<h4 id="keyboard">Keyboard 2.1.1</h4>
+				<p>All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.<br />
+
+				To implement this technique, first determine what functionality is available to users on the page. In this step, it is important to consider functions performed using both the mouse and the keyboard together.</p>
+
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard" target="_blank" rel="noopener">Understanding Success Criterion 2.1.1</a>
+
+				<h5>Examples of These Functions</h5>
+				<ul>
+					<li>The use of physical controls such as links, menus, buttons, checkboxes, radio buttons and form fields.</li>
+					<li>The use of features like drag and drop, selecting text, resizing regions or bringing up context menus.</li>
+					<li>Adding or removing an item from a shopping cart.</li>
+					<li>Initiating a chat session.</li>
+				</ul>
+				<div class="tipBlock">
+					<h5>Tips for Meeting 2.1.1 Criteria</h5>
+					<ul>
+						<li>Identify all functionality on the content.</li>
+						<li>Check that all functionality can be accessed using only the keyboard or keyboard interface.</li>
+					</ul>
+					<h5>Tips for Meeting Criteria<br />
+						For all script actions associated with a, button, or input elements:</h5>
+
+					<h5>In a user agent that supports Scripting:</h5>
+					<ul>
+						<li>Click on the control with the mouse;</li>
+						<li>Check that the scripting action executes properly;</li>
+						<li>If the control is an anchor element, check that the URI in the href attribute of the anchor element is not invoked;</li>
+						<li>Check that it is possible to navigate to and give focus to the control via the keyboard.</li>
+						<li>Set keyboard focus to the control;</li>
+						<li>Check that pressing ENTER invokes the scripting action;</li>
+						<li>If the control is an anchor element, check that the URI in the href attribute of the anchor element is not invoked.</li>
+					</ul>	
+
+					<h5>In a user agent that does NOT support Scripting:</h5>
+					<ul>
+						<li>Click on the control with the mouse;</li>
+						<li>If the control is an anchor element, check that the URI in the href attribute of the anchor element is invoked;</li>
+						<li>Check that it is possible to navigate to and give focus to the control via the keyboard;</li>
+						<li>Set keyboard focus to the control;</li>
+						<li>If the control is an anchor element, check that pressing ENTER invokes the URI of the anchor element's href attribute.</li>
+					</ul>	
+
+					<h5>Examples</h5>
+					<ul>
+						<li>Drag and drop feature must also support cut and paste or have form controls to move objects.</li>
+						<li>Ensure the functionality provided by mousing over an element is available through the keyboard using the focus event.</li>
+						<li>Ensure the functionality provided by mousing up on an element is available through the keyboard using the keyup event.</li>
+						<li>Ensure the functionality provided by mousing out of an element is available through the keyboard using the blur event.</li>
+						<li>Ensure the functionality provided by mousing down on an element is available through the keyboard using the keydown event.</li>
+					</ul>
+				</div>
+		</section>
+		
+		<section class="subSection" aria-labelledby="noTrap">	
+				<h4 id="noTrap">No Keyboard Trap 2.1.2</h4>
+				<p>If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap" target="_blank" rel="noopener">Understanding Success Criterion 2.1.2</a>
+
+			<div class="tipBlock">
+			<h5>Tips for Meeting 2.1.2 Criteria</h5>
+				<ul>
+					<li>Tab through content from start to finish.</li>
+					<li>Check to see that keyboard focus is not trapped in any of the content.</li>
+					<li>If keyboard focus appears to be trapped in any of the content, check that help information is available explaining how to exit the content and can be accessed via the keyboard.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="charKey">
+				<h4 id="charKey">Character Key Shortcuts 2.1.4</h4>
+				<p>If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:
+					<ul>
+						<li>Turn off: A mechanism is available to turn the shortcut off;</li>
+						<li>Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);</li>
+						<li>Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts" target="_blank" rel="noopener">Understanding Success Criterion 2.1.4</a>		
+		</section>
+	</section>
+
+	<section id="enough-time" aria-labelledby="enoughTime">
+			<h3 id="enoughTime">Enough Time 2.2</h3>
+			<p>Provide users enough time to read and use content.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/enough-time" target="_blank" rel="noopener">Understanding Guideline 2.2</a>
+
+		<section class="subSection" aria-labelledby="timingAdjust">
+				<h4 id="timingAdjust">Timing Adjustable 2.2.1</h4>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable" target="_blank" rel="noopener">Understanding Success Criterion 2.2.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.2.1 Criteria</h5>
+				<ul>
+					<li>Turn off: The user is allowed to turn off the time limit before encountering it.</li>
+					<li>Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting.</li>
+					<li>Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times.</li>
+					<li>Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible.</li>
+					<li>Essential Exception: The time limit is essential and extending it would invalidate the activity.</li>
+					<li>20 Hour Exception: The time limit is longer than 20 hours.</li>		
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="pauseStopHide">
+				<h4 id="pauseStopHide">Pause, Stop, Hide 2.2.2</h4>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide" target="_blank" rel="noopener">Understanding Success Criterion 2.2.2</a>
+			<div class="tipBlock">
+				<h5>If Moving, blinking, scrolling:</h5>
+					<ul>
+						<li>Starts automatically; and</li>
+						<li>Lasts more than five seconds; and</li>
+						<li>Is presented in parallel with other content
+							<ul>
+								<li>There must be a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential.</li>
+							</ul>
+						</li>
+					</ul>
+				
+				<h5>If Auto-updating information:</h5>
+					<ul>
+						<li>Starts automatically; and</li>
+						<li>Is presented in parallel with other content
+							<ul>
+								<li>There must be a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.</li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+		</section>
+	</section>
+	
+	<section id="seizures" aria-label="seizures23">
+			<h3 id="seizures23">Seizures 2.3</h3>
+			<p>Do not design content in a way that is known to cause seizures.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/seizures-and-physical-reactions" target="_blank" rel="noopener">Understanding Guideline 2.3</a>
+
+		<section class="subSection" aria-labelledby="threeFlashes">
+				<h4 id="threeFlashes">Three Flashes or Below Threshold 2.3.1</h4>
+				<p>Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold" target="_blank" rel="noopener">Understanding Success Criterion 2.3.1</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting Criteria</h5>
+				<ul>
+					<li>Ensure no component of the content flashes more than three times in any 1-second period.</li>
+					<li>Any video scene involving bright flases is edited so that the flashes occur no more than three times in any 1-second period.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+	<section id="navigable" aria-label="navigable24">
+			<h3 id="navigable24">Navigable 2.4</h3>
+			<p>Provide ways to help users navigate, find content, and determine where they are.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/navigable.html" target="_blank" rel="noopener">Understanding Guideline 2.4</a>
+
+		<section class="subSection" aria-labelledby="bypassBlocks">
+				<h4 id="bypassBlocks">Bypass Blocks 2.4.1</h4>
+				<p>A mechanism is available to bypass blocks of content that are repeated on multiple web pages.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold" target="_blank" rel="noopener">Understanding Success Criterion 2.4.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.1 Criteria</h5>
+				<h5>Create links to skip blocks of repeated material:</h5>
+				<ul>
+					<li>Add a link at the top of each page that goes directly to the main content area, or</li>
+					<li>Add a link at the beginning of a block of repeated content to go to the end of the block.</li>
+				</ul>
+
+				<h5>Use ARIA landmarks to identify regions of a page</h5>
+				<p>Landmarks are inserted into the page using the role attribute on an element that marks the section. The value of the attribute is the name of the landmark.</p>		
+
+				<h5>ARIA landmark role values:</h5>
+				<ul>
+					<li>banner: A region that contains the prime heading or internal title of a page.</li>
+					<li>complementary: Any section of the document that supports the main content, yet is separate and meaningful on its own.</li>
+					<li>contentinfo: A region that contains information about the parent document such as copyrights and links to privacy statements.</li>
+					<li>form: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.</li>
+					<li>main: Main content in a document. In almost all cases a page will have only one role="main".</li>
+					<li>navigation: A collection of links suitable for use when navigating the document or related documents.</li>
+					<li>search: The search tool of a Web document.</li>
+					<li>application: A region declared as a web application, as opposed to a web document. (Note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)</li>
+				</ul>			
+
+				<h5>Use heading elements at the beginning of each section of content to convey the structure.</h5>		
+				<h5>Heading markup can be used for the following:</h5>
+				<ul>
+					<li>To indicate start of main content</li>
+					<li>To mark up section headings within the main content area</li>
+					<li>To demarcate different navigational sections like top or main navigation, left or secondary navigation and footer navigation</li>
+					<li>To mark up images of text that are used as headings</li>
+					<li>To allow users the ability to navigate a page by sections or skip repeated blocks of information</li>
+					<li>Make the h1, h2, h3 etc be meaningful</li>
+					<li>When headings are nested hierarchically, the most important information is given the highest logical level, and subsections are given subsequent logical levels.(i.e., h2 is a subsection of h1). Providing this type of structure will help users understand the overall organization of the content more easily.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="pageTitled">
+				<h4 id="pageTitled">Page Titled 2.4.2</h4>
+				<p>Web pages have titles that describe topic or purpose.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled" target="_blank" rel="noopener">Understanding Success Criterion 2.4.2</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.2 Criteria</h5>
+				<ul>
+					<li>The descriptive title of an HTML Web page is marked up with the &lt;title&gt; element so that it will be displayed in the title bar.</li>
+					<li>All pages must have a unique title</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="focusOrder">	
+				<h4 id="focusOrder">Focus Order 2.4.3</h4>
+				<p>If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order" target="_blank" rel="noopener">Understanding Success Criterion 2.4.3</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.3 Criteria</h5>
+				<ul>
+					<li>Place the interactive elements in an order that follows sequences and relationships within the content.</li>
+					<li>Give focus to elements in an order that follows sequences and relationships within the content by: 
+						<ul>
+							<li>Creating a logical tab order through links, form controls, and objects;</li>
+							<li>Making the DOM order match the visual order.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="linkPurpose">
+				<h4 id="linkPurpose">Link Purpose 2.4.4</h4>
+				<p>The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context" target="_blank" rel="noopener">Understanding Success Criterion 2.4.4</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.4 Criteria</h5>
+				<ul>
+					<li>Provide link text that describes the purpose of a link.</li>
+					<li>Provide a supplemental description of the purpose of a link using one of the following techniques:  
+						<ul>
+							<li>Supplementing link text with the title attribute.</li>
+							<li>Using CSS to hide a portion of the link text.</li>
+						</ul>
+					</li>
+					<li>Identify the purpose of a link using link text combined with programmatically determined link context using one of the following techniques:   
+						<ul>
+							<li>Identifying the purpose of a link using link text combined with its enclosing list item.</li>
+							<li>Identifying the purpose of a link using link text combined with its enclosing paragraph.</li>
+							<li>Identifying the purpose of a link in a nested list using link text combined with the parent list item under which the list is nested.</li>
+							<li>DO NOT use a null alt on an image where the image is the only content in a link.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="multipleWays">
+				<h4 id="multipleWays">Multiple Ways 2.4.5</h4>
+				<p>More than one way is available to locate a web page within a set of web pages except where the Web Page is the result of, or a step in, a process.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways" target="_blank" rel="noopener">Understanding Success Criterion 2.4.5</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.5 Criteria</h5>
+				<ul>
+					<li>Provide links to navigate to related Web pages.</li>
+					<li>Provide a search function to help users find content.</li>
+					<li>Provide a list of links to all other web pages.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="headingsLabels">
+				<h4 id="headingsLabels">Headings and Labels 2.4.6</h4>
+				<p>Headings and labels describe topic or purpose.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels" target="_blank" rel="noopener">Understanding Success Criterion 2.4.6</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.6 Criteria</h5>
+				<ul>
+					<li>Providing <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G130" target="_blank" rel="noopener">descriptive headings</a>.</li>
+					<li>Providing <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G131" target="_blank" rel="noopener">descriptive labels</a>.</li>
+					<li>Use required form control. <a href="https://www.w3.org/TR/WCAG20-TECHS/H90.html">View examples</a> <span class="visually-hidden">of required form controls.</span></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="focusVisible">
+				<h4 id="focusVisible">Focus Visible 2.4.7</h4>
+				<p>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible" target="_blank" rel="noopener">Understanding Success Criterion 2.4.7</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.4.7 Criteria</h5>
+				<ul>
+					<li>Use user interface components that are highlighted by the user agent when they receive focus.</li>
+					<li>Use CSS to change the presentation of a user interface component when it receives focus.</li>
+					<li>Highlight a link or control when the mouse hovers over it.</li>
+					<li>Provide a highly visible highlighting mechanism for links or controls when they receive keyboard focus.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+	<section id="input-modalities" aria-label="inputModalities">
+			<h3 id="inputModalities">Input Modalities 2.5</h3>
+			<p>Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/input-modalities" target="_blank" rel="noopener">Understanding Guideline 2.5</a>
+		
+		<section class="subSection" aria-labelledby="pointerGestures">
+				<h4 id="pointerGestures">Pointer Gestures 2.5.1</h4>
+				<p>All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures" target="_blank" rel="noopener">Understanding Success Criterion 2.5.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.5.1 Criteria</h5>
+				<ul>
+					<li>Ensure all content can be operated without complex gestures.</li>
+					<li>Pinch gesture for zooming and drag gestures to move the visible area must also contain [+] and [-] buttons to zoom in and out, and arrow buttons to pan in all directions.</li>
+					<li>Slider controls that use swiping or dragging must also have buttons on both sides to allow scrolling or increment/decrement the selected value and update the posiiton.</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="subSection" aria-labelledby="pointerCancel">
+				<h4 id="pointerCancel">Pointer Cancellation 2.5.2</h4>
+				<p>For functionality that can be operated using a single pointer, at least one of the following is true:
+					<ul>
+						<li>No Down-Event: The down-event of the pointer is not used to execute any part of the function;</li>
+						<li>Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;</li>
+						<li>Up Reversal: The up-event reverses any outcome of the preceding down-event;</li>
+						<li>Essential: Completing the function on the down-event is essential. (ex: functions that emulate a keyboard or numeric keypad key press.)</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation" target="_blank" rel="noopener">Understanding Success Criterion 2.5.2</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.5.2 Criteria</h5>
+				<ul>
+					<li>Avoid non-essential down-event (onmousedown) activation when clicking, tapping or long pressing the screen.</li>
+					<li>Use onclick, onmouseup, or similar instead.</li>
+					<li>If onmouseup is used, you must provide a mechanism to stop or undo the action preformed.</li>
+				</ul>
+			</div>
+		</section>	
+
+		<section class="subSection" aria-labelledby="labelName">
+				<h4 id="labelName">Label in Name 2.5.3</h4>
+				<p>For user interface components with labels that include text or images of text, the name contains the text that is presented visually.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name" target="_blank" rel="noopener">Understanding Success Criterion 2.5.3</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.5.3 Criteria</h5>
+				<ul>
+					<li>Visible text labels of controls must match their accessible names.</li>
+					<li>The accessible name of a button begins with the same text as the visible label.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="motionActuation">
+				<h4 id="motionActuation">Motion Actuation 2.5.4</h4>
+				<p>Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:
+					<ul>
+						<li>Supported Interface: The motion is used to operate functionality through an accessibility supported interface;</li>
+						<li>Essential: The motion is essential for the function and doing so would invalidate the activity.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation" target="_blank" rel="noopener">Understanding Success Criterion 2.5.4</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 2.5.4 Criteria</h5>
+				<ul>
+					<li>After text is input in a field, shaking a device shows a dialog offering users to undo the input. A cancel button next to the text field offers the same functionality.</li>
+					<li>A user can tilt a device to advance to the next or a previous page. Buttons or links are also provided to perform the same function.</li>
+					<li>A user can move or pan a device to change the view in an interactive photo. A control is also available to perform these same functions.</li>
+					<li>A user can gesture towards the device to navigate content. Controls are also available to navigate.</li>
+					<li>A user can choose an application setting which turns off Shake to Undo features.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+</article>
+		
+	<article aria-labelledby="understandable">
+	<div class="mainSection">
+		<h2 id="understandable">3. Understandable</h2>
+		<p>Information and the operation of user interface must be understandable.</p>
+	</div>		
+
+	<section id="readable" aria-label="readable31">
+			<h3 id="readable31">Readable 3.1</h3>
+			<p>Make text content readable and understandable.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/readable.html" target="_blank" rel="noopener">Understanding Guideline 3.1</a>
+
+		<section class="subSection" aria-labelledby="languagePage">
+				<h4 id="languagePage">Language of Page 3.1.1</h4>
+				<p>The default human language of each web page can be programmatically determined.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page" target="_blank" rel="noopener">Understanding Success Criterion 3.1.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.1.1 Criteria</h5>
+				<ul>
+					<li>Use language attributes on the html element.</li>
+					<li>Specify the default language in the HTTP header.</li>
+				</ul>	
+			</div> 	
+		</section>
+
+		<section class="subSection" aria-labelledby="languageParts">
+				<h4 id="languageParts">Language of Parts 3.1.2</h4>
+				<p>The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts" target="_blank" rel="noopener">Understanding Success Criterion 3.1.2</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.1.2 Criteria</h5>
+				<ul>
+					<li>Use language attributes to identify changes in the human language.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+	<section id="predictable" aria-labelledby="predictable32">
+			<h3 id="predictable32">Predictable 3.2</h3>
+			<p>Make Web pages appear and operate in predictable ways.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/predictable.html" target="_blank" rel="noopener">Understanding Guideline 3.2</a>
+
+		<section class="subSection" aria-labelledby="onFocus">
+				<h4 id="onFocus">On Focus 3.2.1</h4>
+				<p>When any component receives focus, it does not initiate a change of context.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/on-focus" target="_blank" rel="noopener">Understanding Success Criterion 3.2.1</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.2.1 Criteria</h5>
+				<ul>
+					<li>Open new windows and tabs from a link only when necessary.</li>
+					<li>Give users advanced warning when opening a new window.</li>
+					<li>A page pops up a new window only when the user clicks(or uses spacebar) on a button rather than using onfocus to pop up a new window.</li>
+					<li>A submit button is used to move on to the next data entry screen rather than having the next screen appear automatically when the user tabbed onto a 'done' button.</li>
+					<li>The objective of this technique is to provide a method for activating things that is predictable by the user. Users with cognitive disabilities and people using screen readers or screen magnifiers may be confused by an unexpected event such as automatic form submission or activation of a function that causes a change of context.</li>
+				</ul>
+			</div>		
+		</section>
+
+		<section class="subSection" aria-labelledby="onInput">
+				<h4 id="onInput">On Input 3.2.2</h4>
+				<p>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/on-input" target="_blank" rel="noopener">Understanding Success Criterion 3.2.2</a>
+				<p>Selecting elements causes data within dropdown to update accordingly. <a href="https://www.w3.org/TR/WCAG20-TECHS/SCR19.html">See example on how to set up.</a></p>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.2.2 Criteria</h5>
+				<ul>
+					<li>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.</li>
+					<li>Providing a submit button to initiate a change of context using one of the following techniques:
+						<ul>
+							<li>Provide a submit button;</li>
+							<li>Use a button with a select element to perform an action;</li>
+							<li>Describe what will happen before a change to a form control that causes a change of context to occur is made;</li>
+							<li>Use an onchange event on a select element without causing a change of context;</li>
+							<li>Giving users advanced warning when opening a new window.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="consistentNav">	
+				<h4 id="consistentNav">Consistent Navigation 3.2.3</h4>
+				<p>Navigational mechanisms that are repeated on multiple web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation" target="_blank" rel="noopener">Understanding Success Criterion 3.2.3</a>
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.2.3 Criteria</h5>
+				<ul>
+					<li>Use templates to ensure consistency across multiple web pages.</li>
+					<li>Create layout, positioning, layering, and alignment.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="consistentId">
+				<h4 id="consistentId">Consistent Identification 3.2.4</h4>
+				<p>Components that have the same functionality within a set of web pages are identified consistently.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification" target="_blank" rel="noopener">Understanding Success Criterion 3.2.4</a>
+
+			<h4>Text alternatives that are "consistent" are not always "identical."</h4>
+			<p>For instance, you may have an graphical arrow at the bottom of a web page that links to the next web page. The text alternative may say "Go to page 4." Naturally, it would not be appropriate to repeat this exact text alternative on the next web page. It would be more appropriate to say "Go to page 5". Although these text alternatives would not be identical, they would be consistent, and therefore would satisfy this success criterion.</p>
+
+			<h4>A single non-text-content-item may be used to serve different functions.</h4>
+			<p>In such cases, different text alternatives are necessary and should be used. Examples can be commonly found with the use of icons such as check marks, cross marks, and traffic signs. Their functions can be different depending on the context of the web page. A check mark icon may function as "approved", "completed", or "included", to name a few, depending on the situation. Using "check mark" as text alternative across all web pages does not help users understand the function of the icon. Different text alternatives can be used when the same non-text content serves multiple functions.</p>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.2.4 Criteria</h5>
+				<ul>
+					<li>Use labels, names, and text alternatives consistently for content that has the same functionality AND following the sufficient techniques for Success Criterion 1.1.1 and sufficient techniques for Success Criterion 4.1.2 for providing labels, names, and text alternatives.</li>
+					<li>Ensure that the text alternative conveys the function of the component and what will happen when the user activates it.</li>
+					<li>Use the same non-text content for a given function whenever possible.</li>
+				</ul>
+			</div>
+		</section>
+
+	</section>
+
+	<section id="input-assistance" aria-labelledby="inputAssistance">
+			<h3 id="inputAssistance">Input Assistance 3.3</h3>
+			<p>Help users avoid and correct mistakes.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/input-assistance.html" target="_blank" rel="noopener">Understanding Guideline 3.3</a>
+
+		<section class="subSection" aria-labelledby="errorId">
+				<h4 id="errorId">Error Identification 3.3.1</h4>
+				<p>If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification" target="_blank" rel="noopener">Understanding Success Criterion 3.3.1</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.3.1 Criteria</h5>
+				<ul>
+					<li>Provide text descriptions to identify required fields that were not completed.</li>
+					<li>Provide client-side validation and alert (if applicable).</li>
+					<li>Provide a text description when the user provides information that is not in the list of allowed values.</li>
+					<li>Provide a text description when user input falls outside the required format or values.</li>
+					<li>Highlight errors where they occur.</li>
+					<li>Need asterisk by required fields. Also, need note stating what asterisk means: Starred(*) fields are required.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="labelsInst">	
+				<h4 id="labelsInst">Labels or Instructions 3.3.2</h4>
+				<p>Labels or instructions are provided when content requires user input.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions" target="_blank" rel="noopener">Understanding Success Criterion 3.3.2</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.3.2 Criteria</h5>
+				<ul>
+					<li>Provide text instructions at the beginning of a form or set of fields that describes the necessary input.</li>
+					<li>Position labels to maximize predictability of relationships.</li>
+					<li>Indicate required form controls using label or legend.</li>
+					<li>Use label elements to associate text labels with form controls.</li>
+					<li>Provide a description for groups of form controls using fieldset and legend elements.</li>
+					<li>Use the title attribute to identify form controls when the label element cannot be used.</li>
+				</ul>
+
+				<h4>Form Labeling</h4>
+				<ul>
+					<li><a href="http://webaim.org/techniques/forms/advanced" target="_blank" rel="noopener">More Information on ARIA within Forms</a></li>
+					<li>Use &lt;label&gt; element when you can. It has excellent browser and screen reader support, and users can click on the label to select the associated form control.</li>
+					<li>Use aria-labelledby to overcome the 1:1 limitations of &lt;label&gt;.</li>
+					<li>Use aria-describedby in addition to a label when you need to associate descriptive text to the form control.</li>
+					<li>Use a hidden &lt;label&gt; or title or aria-label when a visible text label is not available.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="errorSug">
+				<h4 id="errorSug">Error Suggestion 3.3.3</h4>
+				<p>If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" target="_blank" rel="noopener">Understanding Success Criterion 3.3.3</a>
+
+			<h5>If a mandatory field contains no information:</h5>
+			<ul>
+				<li>Provide text descriptions to identify required fields that were not completed;</li>
+				<li>Identify a required field with the aria-required property.</li>
+			</ul>		
+		
+			<h5>If information for a field is required to be in a specific data format:</h5>
+			<ul>
+				<li>Use aria-alertdialog to Identify Errors;</li>
+				<li>Provide a text description when user input falls outside the required format or values;</li>
+				<li>Provide suggested correction text;</li>
+				<li>Provide client-side validation and alert;</li>
+				<li>Provide client-side validation and adding error text via the DOM.</li>
+			</ul>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 3.3.3 Criteria</h5>
+				<ul>
+					<li>Create a mechanism that allows users to jump to errors.</li>
+					<li>Make error messages easy to understand and distinguishable from other text in the Web page.</li>
+					<li>When mandatory information has not been provided, including descriptions or examples of correct information in addition to identifying the field as mandatory.</li>
+					<li>Repeat and emphasize suggestions for correcting each input error in the context of its form field.</li>
+					<li>Provide a way for the user to skip from each item in a list of suggestions to its corresponding form field.</li>
+					<li>Provide additional contextual help for the form field requiring change.</li>
+					<li>Accept input data in a variety of formats.</li>
+					<li>Provide success feedback when data is submitted successfully.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="errorPrev">
+				<h4 id="errorPrev">Error Prevention (Legal, Financial, Data) 3.3.4</h4>
+				<p>For web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+					<ul>
+						<li>Reversible: Submissions are reversible;</li>
+						<li>Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them;</li>
+						<li>Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+					</ul>
+				</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data" target="_blank" rel="noopener">Understanding Success Criterion 3.3.4</a>
+
+			<h5>If an application causes a legal transaction to occur, such as making a purchase:</h5>
+				<ul>
+					<li>Provide a stated time within which an online request (or transaction) may be amended or canceled by the user after making the request;</li>
+					<li>Provide the ability for the user to review and correct answers before submitting.</li>
+				</ul>	
+
+			<h5>If an action causes information to be deleted:</h5>
+				<ul>
+					<li>Provide the ability to recover deleted information;</li>
+					<li>Request confirmation to continue with selected action.</li>
+				</ul>
+		</section>
+	</section>
+</article>
+	
+	<article aria-labelledby="robust">
+	<div class="mainSection">
+		<h2 id="robust">4. Robust</h2>
+		<p>Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.</p>
+	</div>
+
+	<section id="compatible" aria-label="compatible41">
+			<h3 id="compatible41">Compatible 4.1</h3>
+			<p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/compatible.html" target="_blank" rel="noopener">Understanding Guideline 4.1</a>
+		
+		<section class="subSection" aria-labelledby="parsing">
+				<h4 id="parsing">Parsing 4.1.1</h4>
+				<p>In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing" target="_blank" rel="noopener">Understanding Success Criterion 4.1.1</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 4.1.1 Criteria</h5>
+				<ul>
+					<li>Validate web pages.</li>
+					<li>Ensure that opening and closing tags are used according to specs.</li>
+					<li>Ensure that id attributes are unique on the web page.</li>
+					<li>Avoid using duplicate attributes on elements.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="nameRoleValue">	
+				<h4 id="nameRoleValue">Name, Role, Value 4.1.2</h4>
+				<p>For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.</p>
+				<a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value" target="_blank" rel="noopener">Understanding Success Criterion 4.1.2</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 4.1.2 Criteria</h5>
+				<ul>
+					<li>Use the title attribute of the frame and iframe elements.</li>
+					<li>Use the title attribute to identify form controls when the label element cannot be used.</li>
+					<li>Use label elements to associate text labels with form controls.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subSection" aria-labelledby="statusMsg">
+			<h4 id="statusMsg">Status Messages 4.1.3</h4>
+			<p>In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.</p>
+			<a href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages" target="_blank" rel="noopener">Understanding Success Criterion 4.1.3</a>
+
+			<div class="tipBlock">
+				<h5>Tips for Meeting 4.1.3 Criteria</h5>
+				<ul>
+					<li>If status message advises on the success or results of an action, use role="status". (Ex: When providing success feedback when data is submitted successfully.)</li>
+					<li>If status message conveys a suggestion or warning, use role="alert". (Ex: Validation summary)</li>
+					<li>If status message conveys information on the progress of a process, use role="progressbar".</li>
+					<li>Do not use role="alert" or aria-live="assertive" on content which is not important and time-sensitive.</li>
+				</ul>
+			</div>
+		</section>	
+	</section>
+</article>			
+</section>        <!-- end accessibility --> 	
+</main> <!--end mainContent -->
+</div>			
+<footer class="footer">
+	<div class="footer-content">
+		<a href="https://www.morainepark.edu/" rel="noopener" target="_blank"><img class="flogo" src="../images/footer-logo.png" alt="MPTC" /></a>
+		<p>&copy;2018 MORAINE PARK TECHNICAL COLLEGE | <a href="https://www.morainepark.edu/legal" rel="noopener" target="_blank">PRIVACY STATEMENT</a> | <a href="https://www.morainepark.edu/employment/equal-opportunity-employment/equal-opportunity-statement/" rel="noopener" target="_blank">MPTC IS AN EQUAL OPPORTUNITY COLLEGE</a></p>
+	</div>
+</footer>
+	
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/morainepark.js"></script>
+
+</body>
+</html>

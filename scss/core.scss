@@ -1,0 +1,27 @@
+
+/* SCSS Document */
+
+@import "partials/variables";
+
+@import "partials/utility";
+@import "partials/background";
+
+@import "partials/layout";
+@import "partials/header";
+
+@import "partials/typography";
+
+@import "partials/footer";
+@import "partials/pageBanner";
+@import "partials/notifications";
+
+
+.mainExample button {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.mainExample {
+	background-color: $ltGray;
+	margin: 40px;
+}

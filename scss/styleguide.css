@@ -1,0 +1,236 @@
+/*    _variables.scss     */
+/*  #58b947 from styleguide  */
+/* or change to #444444 ? */
+/*  #808285 from styleguide  */
+/* line 3, styleguide.scss */
+.openSansFont {
+  font-family: "Open Sans", sans-serif; }
+
+/* line 4, styleguide.scss */
+.oswaldFont {
+  font-family: "Oswald", sans-serif; }
+
+/* line 7, styleguide.scss */
+.swatch {
+  height: 50px;
+  width: 100%; }
+
+/* line 8, styleguide.scss */
+.reset {
+  margin: 0;
+  padding: 0; }
+
+/* line 10, styleguide.scss */
+.borderGreen {
+  border: 2px solid #5BB84D; }
+
+/* line 12, styleguide.scss */
+#main-nav ul li a:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0; }
+
+/* line 17, styleguide.scss */
+.interior-container h3 {
+  margin-bottom: 0; }
+
+/* line 18, styleguide.scss */
+.heading-container .heading .breadcrumbs a:hover {
+  text-decoration: underline; }
+
+/* line 20, styleguide.scss */
+.whiteLinkExample {
+  padding: 10px; }
+  /* line 21, styleguide.scss */
+  .whiteLinkExample a {
+    font-weight: 400; }
+
+/* line 26, styleguide.scss */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 31, styleguide.scss */
+.flex-container > a,
+.flex-container > div {
+  width: 100%;
+  margin: 10px; }
+
+/* line 38, styleguide.scss */
+.nav-grid a {
+  border: 2px solid #f0f0f0;
+  margin: 5px;
+  padding: 10px 0;
+  float: left;
+  text-align: center; }
+
+/* line 45, styleguide.scss */
+.nav-grid a:link {
+  background-color: #f0f0f0; }
+
+/* line 46, styleguide.scss */
+.nav-grid a:visited {
+  background-color: #f0f0f0; }
+
+/* line 47, styleguide.scss */
+.nav-grid a:hover {
+  background-color: #ffffff; }
+
+/* line 48, styleguide.scss */
+.nav-grid a:active {
+  background-color: #ffffff; }
+
+/*
+.navGrid  { margin: 0 auto; }
+.navGrid ul { padding: 0; margin: 0;}*/
+/*.navGrid li a {
+	border: 2px solid $ltGray;
+	color: $dkGray;
+	margin: 5px;
+	padding: 10px 0;
+	float: left;
+	text-align: center;
+}*/
+/*
+.navGrid ul li { list-style: none;}
+.navGrid li a:link {background-color: $ltGray; }
+.navGrid li a:visited { background-color: $ltGray; }
+.navGrid li a:hover { background-color: $white; }
+.navGrid li a:active { background-color: $white; }
+*/
+/* line 68, styleguide.scss */
+.guideContainer section {
+  margin-bottom: 40px; }
+
+/* line 69, styleguide.scss */
+.guideContainer .mainSection {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  text-align: center; }
+
+/* line 70, styleguide.scss */
+.guideContainer .mainSection h2 {
+  line-height: 0; }
+
+/* line 71, styleguide.scss */
+.guideContainer .mainSection h4 {
+  margin: 0; }
+
+/* line 72, styleguide.scss */
+.interior-container h5 {
+  margin-top: 20px; }
+
+/* line 74, styleguide.scss */
+.guideContainer .subSection {
+  margin: 10px auto; }
+
+/* line 76, styleguide.scss */
+.guideContainer .tipBlock {
+  border: 1px solid #f0f0f0;
+  margin: 10px auto 40px auto; }
+
+/* line 77, styleguide.scss */
+.guideContainer .tipBlock h5 {
+  background-color: #333333;
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+  color: #b1b1b1; }
+
+/* line 78, styleguide.scss */
+.guideContainer .tipBlock p {
+  margin: 10px; }
+
+/* line 80, styleguide.scss */
+.guideContainer table {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #f0f0f0; }
+
+/* line 81, styleguide.scss */
+.guideContainer caption {
+  background-color: #f0f0f0;
+  padding: 10px; }
+
+/* line 82, styleguide.scss */
+.guideContainer tbody tr:nth-child(odd) {
+  background-color: #f0f0f0; }
+
+/* line 83, styleguide.scss */
+.guideContainer ul {
+  margin-top: 0; }
+
+/* line 85, styleguide.scss */
+.logocontainer .logoTall img {
+  max-height: 300px;
+  min-height: 300px;
+  width: 100%; }
+
+/* line 86, styleguide.scss */
+.logocontainer .logoShort {
+  min-height: 130px; }
+
+/* line 88, styleguide.scss */
+table.typeTable {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  table-layout: auto;
+  word-break: normal;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  width: 100%; }
+
+/* line 99, styleguide.scss */
+.typeTable th, .typeTable td {
+  vertical-align: top;
+  padding: 12px 15px; }
+
+/* line 104, styleguide.scss */
+tbody tr:nth-child(2n+1) {
+  background-color: transparent; }
+
+/* line 106, styleguide.scss */
+.typeTable td {
+  border-bottom: 1px dotted #dedddc;
+  cursor: default;
+  line-height: 24px; }
+
+/* line 112, styleguide.scss */
+.fontExampleBlock {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 30px;
+  word-wrap: break-word; }
+
+/* line 113, styleguide.scss */
+.mdcExample {
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px 0;
+  text-align: center; }
+  /* line 114, styleguide.scss */
+  .mdcExample a {
+    clear: both;
+    display: block;
+    margin-top: 20px; }
+
+@media screen and (min-width: 600px) {
+  /* line 118, styleguide.scss */
+  .flex-container > a,
+  .flex-container > div {
+    width: 20%; }
+
+  /* line 123, styleguide.scss */
+  .guideContainer .tipBlock {
+    width: 80%; }
+    /* line 124, styleguide.scss */
+    .guideContainer .tipBlock p {
+      font-size: .875rem;
+      line-height: 1.25rem; }
+  /* line 126, styleguide.scss */
+  .guideContainer ul,
+  .guideContainer ol {
+    font-size: .875rem;
+    line-height: 1.25rem; } }

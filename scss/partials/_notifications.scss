@@ -1,0 +1,46 @@
+
+.notify-info::before, .notify-success::before, .notify-warning::before, .notify-error::before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 1.6em;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .3em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.notify-info::before {
+    content: "\f05a";
+}
+
+.notify-warning::before { 
+    content: "\f071";
+}
+
+.notify-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+
+.notify-warning {
+    color: #9a1d85;
+    background-color: #FDF2D1;
+}
+
+.notify-info, .notify-success, .notify-warning, .notify-error {
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+

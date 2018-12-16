@@ -1,0 +1,25 @@
+footer {
+	max-width: 100%;
+	width: 100%;
+	font-family: $openSansFont;
+	padding: 1rem 0;
+	background: $dkGray;
+	border-top: 4px solid $green;
+	text-align: center;
+}
+
+footer p {
+	color: $mdGray; 
+	font-size: 1rem;
+}
+
+footer a {cursor: pointer;}
+footer a:link, 
+footer a:visited {	color: $mdGray; }
+footer a:hover,
+footer a:active {	text-decoration: underline; color: $white; }
+
+.footer .flogo {
+	width: 150px;
+	margin: 0 auto;
+}
